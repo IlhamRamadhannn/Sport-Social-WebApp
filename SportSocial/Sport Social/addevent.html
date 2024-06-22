@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="addeventstyle.css">
+</head>
+<body>
+    <div class="bar-container">
+        <div class="bar">
+            <div class="rectangle">
+                <img src="Running-pic.png" class="logo">
+            </div>
+        </div>
+    </div>
+
+    <div class="navigation">
+        <div class="bar2">
+            <div class="rectangle2">
+                <a href="home.html"><img src="25694.png" class="home"></a>
+                <a href="create.html"><img src="plus vector icon_4015245.png" class="plus"></a>
+                <a href="history.html"><img src="history-icon-2048x1863-258qellh.png" class="history"></a>
+                <a href="profile.html"><img src="854888-200.png" class="profile"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="web">
+        <div class="banner">
+            <form action="success.html" method="post" class="form-container">
+                <h2>Create Event</h2>
+                <div class="form-group">
+                    <label for="event-name">Event Name:</label>
+                    <input type="text" id="event-name" name="event-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="event-location">Event Location:</label>
+                    <input type="text" id="event-location" name="event-location" required>
+                </div> 
+                <div class="form-group">
+                    <label for="event-date">Event Date:</label>
+                    <input type="datetime-local" id="event-date" name="event-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="event-description">Event Description:</label>
+                    <textarea id="event-description" name="event-description" required></textarea>
+                </div>
+                <div>
+                    <label for="event-number">Number of Players</label>
+                    <input type="number" id="event-number" name="event-number" required>
+                </div>
+                <button type="submit" class="custom-button">Create</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

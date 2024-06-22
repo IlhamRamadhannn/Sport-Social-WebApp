@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    max-width: 480px;
+    min-height: 1vh;
+    margin: 0 auto;
+    background-color: #977663;
+}
+
+.bar-container {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 480px;
+    z-index: 1000;
+    background-color: #B26958;
+}
+
+.bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.rectangle {
+    width: 100%;
+    background-color: #B26958;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 39px;
+    cursor: pointer;
+}
+
+.banner {
+    width: 100%;
+    height: 120vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(140, 56, 36, 1));
+    background-size: cover;
+    position: relative;
+}
+
+.background-layer {
+    position: absolute;
+    top: 17%; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 30%; 
+    background-image: linear-gradient(rgb(238, 204, 204), rgb(199, 102, 78)); 
+    border-radius: 20px;  
+    z-index: 0;  
+}
+
+.welcome-container {
+    position: relative;
+    margin-bottom: 100%;
+    top: 7%;
+    left: 95%;
+    transform: translate(-92%, -10%);
+    text-align: left; 
+    z-index: 1000;
+}
+
+.welcomemessage {
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.custom-button,.save-button {
+    padding: 10px 20px;
+    background-color: #B27E72; 
+    color: white; 
+    border: none; 
+    border-radius: 19px; 
+    cursor: pointer; 
+    margin-top: 15px;
+}
+
+.custom-button:hover, .save-button:hover {
+    background-color: #ECECEC; 
+    color: #B27E72;
+}
+
+.show {
+    display: block;
+}
+
+.home{
+    width: 40px;
+    cursor: pointer;
+    margin-right: 34px;
+    margin-left: 34px;
+    opacity: 60%;
+}
+
+.plus{
+    width: 40px;
+    cursor: pointer;
+    margin-right: 34px;
+    margin-left: 34px;
+    opacity: 70%;
+}
+
+.history{
+    width: 35px;
+    cursor: pointer;
+    margin-right: 34px;
+    margin-left: 34px;
+    opacity: 75%;
+}
+
+.profile{
+    width: 50px;
+    cursor: pointer;
+    margin-right: 34px;
+    margin-left: 34px;
+    opacity: 60%;
+}
+
+.navigation{
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 480px;
+    z-index: 1000;
+    background-color: #B26958;
+}
+.bar2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.rectangle2{
+    width: 100%;
+    background-color: #B26958;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navigation img {
+    transition: opacity 0.3s ease;
+}
+
+.navigation a:hover img {
+    opacity: 1;
+}
+
+.web {
+    padding-top: 60px; /* Adjusted to account for the top bar */
+    padding-bottom: 60px; /* Adjusted to account for the bottom navigation */
+}
+
+.banner {
+    width: 100%;
+    min-height: calc(100vh - 120px); /* Adjusted to account for the top and bottom bars */
+    background-image: linear-gradient(rgb(250, 224, 224), rgb(185, 70, 41));
+    background-size: cover;
+    position: relative;
+}
+
+.form-container {
+    max-width: 80%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="datetime-local"] {
+    width: calc(100% - 22px); /* Adjusted for padding */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.custom-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #B27E72;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.custom-button:hover {
+    background-color: #ECECEC;
+    color: #B27E72;
+}
+
+.eventimg {
+    height: 70px;
+    width: 70px;
+    border-radius: 19px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="number"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+}
+
+@media (max-width: 480px) {
+    body {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .bar-container {
+        width: 100%;
+        max-width: 100%;
+    }
+}
